@@ -140,18 +140,19 @@ ${var~~}  | Inverte maiúscula/minúscula de todos os caracteres
 
 ### 5. Blocos e agrupamentos
 
-Sintaxe 	Descrição 	Exemplo
-"..." 	Protege uma string, mas reconhece $, \ e ` como especiais 	"abc"
-'...' 	Protege uma string completamente (nenhum caractere é especial) 	'abc'
-$'...' 	Protege uma string completamente, mas interpreta \n, \t, \a, etc 	$'abc\n'
-`...` 	Executa comandos numa subshell, retornando o resultado 	`ls`
-{...} 	Agrupa comandos em um bloco 	{ ls ; }
-(...) 	Executa comandos numa subshell 	( ls )
-$(...) 	Executa comandos numa subshell, retornando o resultado 	$( ls )
-((...)) 	Testa uma operação aritmética, retornando 0 ou 1 	((5 > 3))
-$((...)) 	Retorna o resultado de uma operação aritmética 	$((5+3))
-[...] 	Testa uma expressão, retornando 0 ou 1 (alias do comando 'test') 	[ 5 -gt 3 ]
-[[...]] 	Testa uma expressão, retornando 0 ou 1 (podendo usar && e ||) 	[[ 5 > 3 ]]
+Sintaxe |	Descrição |	Exemplo
+--------|-------------|---------
+"..." 	| Protege uma string, mas reconhece $, \ e ` como especiais |	"abc"
+'...' 	| Protege uma string completamente (nenhum caractere é especial) 	|'abc'
+$'...' 	| Protege uma string completamente, mas interpreta \n, \t, \a, etc |	$'abc\n'
+`...` 	| Executa comandos numa subshell, retornando o resultado 	| `ls`
+{...} 	| Agrupa comandos em um bloco 	| { ls ; }
+(...) 	| Executa comandos numa subshell 	| ( ls )
+$(...) 	| Executa comandos numa subshell, retornando o resultado 	| $( ls )
+((...))  | Testa uma operação aritmética, retornando 0 ou 1 	| ((5 > 3))
+$((...)) | Retorna o resultado de uma operação aritmética 	| $((5+3))
+[...] 	|Testa uma expressão, retornando 0 ou 1 (alias do comando 'test') 	| [ 5 -gt 3 ]
+[[...]] |Testa uma expressão, retornando 0 ou 1 (podendo usar && e ||) 	| [[ 5 > 3 ]]
 
 ### 6. if, for, select, while, until, case
 
