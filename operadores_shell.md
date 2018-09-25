@@ -14,38 +14,46 @@ Sinal | Operação
 
 #### Operadores de Atribuição
 
-= 	Atribui valor a uma variável
-+= 	Incrementa a variável por uma constante
--= 	Decrementa a variável por uma constante
-*= 	Multiplica a variável por uma constante
-/= 	Divide a variável por uma constante
-%= 	Resto da divisão por uma constante
-++ 	Incrementa em 1 o valor da variável
--- 	Decrementa em 1 o valor da variável
+Sinal | Operação
+----- | ---------
+= 	| Atribui valor a uma variável
++= 	| Incrementa a variável por uma constante
+-= 	| Decrementa a variável por uma constante
+*= 	| Multiplica a variável por uma constante
+/= 	| Divide a variável por uma constante
+%= 	| Resto da divisão por uma constante
+++ 	| Incrementa em 1 o valor da variável
+-- 	| Decrementa em 1 o valor da variável
 
 #### Operadores Relacionais
 
-== 	Igual
-!= 	Diferente
-> 	Maior
->= 	Maior ou Igual
-< 	Menor
-<= 	Menor ou Igual
+Sinal | Operação
+----- | ---------
+== | Igual
+!= | Diferente
+\> | Maior
+\>= | Maior ou Igual
+<  | Menor
+<= | Menor ou Igual
 
 #### Operadores Lógicos
 
-&& 	E lógico (AND)
-|| 	OU lógico (OR)
+Sinal | Operação
+----- | ---------
+&& 	| E lógico (AND)
+|| 	 | OU lógico (OR)
 
 #### Operadores de BIT
 
-<< 	Deslocamento à esquerda
->> 	Deslocamento à direita
-& 	E de bit (AND)
-| 	OU de bit (OR)
-^ 	OU exclusivo de bit (XOR)
-~ 	Negação de bit
-! 	NÃO de bit (NOT)
+Sinal | Operação
+----- | ---------
+<< 	| Deslocamento à esquerda
+\>> | Deslocamento à direita
+& 	| E de bit (AND)
+| 	| OU de bit (OR)
+^ 	| OU exclusivo de bit (XOR)
+~ 	| Negação de bit
+! 	| NÃO de bit (NOT)
 
 #### Operadores de BIT (atribuição)
 
