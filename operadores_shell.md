@@ -3,9 +3,9 @@
 
 #### Operadores Aritméticos
 
-+ 	| Adição
-- 	| Subtração
-* 	| Multiplicação
+plus sign 	| Adição
+minus sign 	| Subtração
+asterisk 	| Multiplicação
 / 	| Divisão
 % 	| Módulo
 ** 	| Exponenciação
