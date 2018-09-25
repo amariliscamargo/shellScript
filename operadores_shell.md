@@ -157,8 +157,7 @@ $((...)) | Retorna o resultado de uma operação aritmética 	| $((5+3))
 ### 6. if, for, select, while, until, case
 
 |if |for / select |	while / until |	case|
-|---|-------------|----------------|------|
-
+|---|-------------|---------------|----|
 |if COMANDO
 then
    ...
