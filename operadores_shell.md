@@ -167,35 +167,22 @@ then
    ...
 else
    ...
-fi
-
-|
-
-for VAR in LISTA
+fi | for VAR in LISTA
 do
     ...
 done
 
 ou:
 
-for ((exp1;exp2;exp3))
-
-|	
-
-while COMANDO
+for ((exp1;exp2;exp3)) | while COMANDO
 do
     ...
-done
-
-	
-|
-case $VAR in
+done | case $VAR in
     txt1) ... ;;
     txt2) ... ;;
     txtN) ... ;;
     *)    ... ;;
-esac
-|
+esac |
 ### 7. Opções do comando test ou [
 
 #### Comparação Numérica
