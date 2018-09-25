@@ -527,39 +527,34 @@ $ zzascii
 
 
 ### 22. Códigos prontos para copiar e colar
-| teste  |
-|---|
-|   |  
-|   |  
-|   |
 
-Condicionais com o IF
----------------------
-if [ -f "$arquivo" ]; then echo 'Arquivo encontrado'; fi
-if [ ! -d "$dir" ]; then echo 'Diretório não encontrado'; fi
-if [ $i -gt 5 ]; then echo 'Maior que 5'; else echo 'Menor que 5'; fi
-if [ $i -ge 5 -a $i -le 10 ]; then echo 'Entre 5 e 10, incluindo'; fi
-if [ $i -eq 5 ]; then echo '=5'; elif [ $i -gt 5 ]; then echo '>5'; else echo '<5'; fi
-if [ "$USER" = 'root' ]; then echo 'Oi root'; fi
-if grep -qs 'root' /etc/passwd; then echo 'Usuário encontrado'; fi
+| Condicionais com o IF |
+| --------------------- |
+|if [ -f "$arquivo" ]; then echo 'Arquivo encontrado'; fi |
+|if [ ! -d "$dir" ]; then echo 'Diretório não encontrado'; fi |
+|if [ $i -gt 5 ]; then echo 'Maior que 5'; else echo 'Menor que 5'; fi |
+|if [ $i -ge 5 -a $i -le 10 ]; then echo 'Entre 5 e 10, incluindo'; fi |
+|if [ $i -eq 5 ]; then echo '=5'; elif [ $i -gt 5 ]; then echo '>5'; else echo '<5'; fi |
+|if [ "$USER" = 'root' ]; then echo 'Oi root'; fi |
+|if grep -qs 'root' /etc/passwd; then echo 'Usuário encontrado'; fi |
 
-Condicionais com o E (&&) e OU (||)
--------------------------------------
-[ -f "$arquivo" ] && echo 'Arquivo encontrado'
-[ -d "$dir" ] || echo 'Diretório não encontrado'
-grep -qs 'root' /etc/passwd && echo 'Usuário encontrado'
-cd "$dir" && rm "$arquivo" && touch "$arquivo" && echo 'feito!'
-[ "$1" ] && param=$1 || param='valor padrão'
-[ "$1" ] && param=${1:-valor padrão}
-[ "$1" ] || { echo "Uso: $0 parâmetro" ; exit 1 ; }
+|Condicionais com o E (&&) e OU (/|/|)|
+|-------------------------------------|
+|[ -f "$arquivo" ] && echo 'Arquivo encontrado'|
+|[ -d "$dir" ] || echo 'Diretório não encontrado'|
+|grep -qs 'root' /etc/passwd && echo 'Usuário encontrado'|
+|cd "$dir" && rm "$arquivo" && touch "$arquivo" && echo 'feito!'|
+|[ "$1" ] && param=$1 || param='valor padrão'|
+|[ "$1" ] && param=${1:-valor padrão}|
+|[ "$1" ] || { echo "Uso: $0 parâmetro" ; exit 1 ; }|
 
-Adicionar 1 à variável $i
---------------------------
-i=$(expr $i + 1)
-i=$((i+1))
-let i=i+1
-let i+=1
-let i++
+|Adicionar 1 à variável $i|
+|--------------------------|
+|i=$(expr $i + 1)|
+|i=$((i+1))|
+|let i=i+1|
+|let i+=1|
+|let i++|
 
 Loop de 1 à 10
 --------------
