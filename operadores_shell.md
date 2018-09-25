@@ -158,15 +158,7 @@ $((...)) | Retorna o resultado de uma operação aritmética 	| $((5+3))
 
 if |for / select |	while / until |	case
 :---|-------------|---------------|----
-if COMANDO  
-
-then   
-
-...  
-
-elif COMANDO  
-
-then  
+if COMANDO then...elif COMANDOthen  
 
 ...  
 
