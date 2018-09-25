@@ -614,6 +614,7 @@ Ctrl+Y 	Cola o trecho recortado
 ### 24. A caixa de ferramentas do shelleiro
 
 Comando | Função | opções úteis
+------- | ------- | -----------
 cat |	Mostra arquivo 	|-n, -s
 cut | Extrai campo 	|-d -f, -c
 date |	Mostra data 	|  -d, +'...'
