@@ -527,6 +527,11 @@ $ zzascii
 
 
 ### 22. Códigos prontos para copiar e colar
+| teste  |
+|---|
+|   |  
+|   |  
+|   |
 
 Condicionais com o IF
 ---------------------
