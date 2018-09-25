@@ -156,9 +156,9 @@ $((...)) | Retorna o resultado de uma operação aritmética 	| $((5+3))
 
 ### 6. if, for, select, while, until, case
 
-|if |for / select |	while / until |	case|
-|---|-------------|---------------|----|
-|`if COMANDO
+if |for / select |	while / until |	case
+:---|-------------|---------------|----
+`if COMANDO
 then
    ...
 elif COMANDO
@@ -181,7 +181,7 @@ done` | `case $VAR in
     txt2) ... ;;
     txtN) ... ;;
     *)    ... ;;
-esac` |
+esac` 
 ### 7. Opções do comando test ou [
 
 #### Comparação Numérica
