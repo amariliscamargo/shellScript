@@ -1,4 +1,4 @@
-## Operadores para shell
+## Operadores para Shell Script
 ### 1. Operadores
 
 #### Operadores Aritméticos
@@ -40,8 +40,8 @@ Sinal | Operação
 
 Sinal | Operação
 ----- | ---------
-&& 	| E lógico (AND)
-|| 	 | OU lógico (OR)
+&& 	  | E lógico (AND)
+\|| 	  | OU lógico (OR)
 
 #### Operadores de BIT
 
@@ -58,7 +58,7 @@ Sinal | Operação
 #### Operadores de BIT (atribuição)
 
 <<= 	Deslocamento à esquerda
->>= 	Deslocamento à direita
+\>>= 	Deslocamento à direita
 &= 	E de bit
 |= 	OU de bit
 ^= 	OU exclusivo de bit
@@ -67,22 +67,23 @@ Sinal | Operação
 ### 2. Redirecionamento
 
 
-Operador 	Ação
-< 	Redireciona a entrada padrão (STDIN)
-> 	Redireciona a saída padrão (STDOUT)
-2> 	Redireciona a saída de erro (STDERR)
->> 	Redireciona a saída padrão, anexando
-2>> 	Redireciona a saída de erro, anexando
-| 	Conecta a saída padrão com a entrada padrão de outro comando
-2>&1 	Conecta a saída de erro na saída padrão
->&2 	Conecta a saída padrão na saída de erro
->&- 	Fecha a saída padrão
-2>&- 	Fecha a saída de erro
-3<>arq 	Conecta o descritor de arquivos 3 ao arquivo 'arq'
-<<FIM 	Alimenta a entrada padrão (Here Document)
-<<-FIM 	Alimenta a entrada padrão, cortando TABs
-<(cmd) 	A saída do comando 'cmd' é um arquivo: diff <(cmd1) <(cmd2)
->(cmd) 	A entrada do comando 'cmd' é um arquivo: tar cf >(bzip2 -c >file.tbz) $dir
+Operador | Ação
+---------| -----
+< | Redireciona a entrada padrão (STDIN)
+\> | Redireciona a saída padrão (STDOUT)
+2> | Redireciona a saída de erro (STDERR)
+\>>|Redireciona a saída padrão, anexando
+2>> |Redireciona a saída de erro, anexando
+\| | Conecta a saída padrão com a entrada padrão de outro comando
+2>&1 |Conecta a saída de erro na saída padrão
+\>&2 |	Conecta a saída padrão na saída de erro
+\>&- |	Fecha a saída padrão
+2>&- |	Fecha a saída de erro
+3<>arq | 	Conecta o descritor de arquivos 3 ao arquivo 'arq'
+<<FIM |	Alimenta a entrada padrão (Here Document)
+<<-FIM |Alimenta a entrada padrão, cortando TABs
+<(cmd) |A saída do comando 'cmd' é um arquivo: diff <(cmd1) <(cmd2)
+\>(cmd) |	A entrada do comando 'cmd' é um arquivo: tar cf >(bzip2 -c >file.tbz) $dir
 
 ### 3. Variáveis especiais
 
