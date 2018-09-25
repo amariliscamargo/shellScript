@@ -1,0 +1,14 @@
+{
+  "name": "shell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run bash",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bash":"./exemplo4.sh && ./exemplo3.sh",
+    "exemplo5":"./exemplo5.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
