@@ -156,7 +156,8 @@ $((...)) | Retorna o resultado de uma operação aritmética 	| $((5+3))
 
 ### 6. if, for, select, while, until, case
 
-if 	for / select 	while / until 	case
+if |for / select |	while / until |	case
+---|-------------|----------------|------
 
 if COMANDO
 then
@@ -168,7 +169,7 @@ else
    ...
 fi
 
-	
+|
 
 for VAR in LISTA
 do
@@ -179,7 +180,7 @@ ou:
 
 for ((exp1;exp2;exp3))
 
-	
+|	
 
 while COMANDO
 do
@@ -187,7 +188,7 @@ do
 done
 
 	
-
+|
 case $VAR in
     txt1) ... ;;
     txt2) ... ;;
