@@ -41,7 +41,7 @@ Sinal | Operação
 Sinal | Operação
 ----- | ---------
 && 	  | E lógico (AND)
-\|| 	  | OU lógico (OR)
+\|\|  | OU lógico (OR)
 
 #### Operadores de BIT
 
@@ -50,18 +50,20 @@ Sinal | Operação
 << 	| Deslocamento à esquerda
 \>> | Deslocamento à direita
 & 	| E de bit (AND)
-| 	| OU de bit (OR)
+\| 	| OU de bit (OR)
 ^ 	| OU exclusivo de bit (XOR)
 ~ 	| Negação de bit
 ! 	| NÃO de bit (NOT)
 
 #### Operadores de BIT (atribuição)
 
-<<= 	Deslocamento à esquerda
-\>>= 	Deslocamento à direita
-&= 	E de bit
-|= 	OU de bit
-^= 	OU exclusivo de bit
+Sinal | Operação
+----- | ---------
+<<=   | Deslocamento à esquerda
+\>>=  | Deslocamento à direita
+&= 	  | E de bit
+\|=   | OU de bit
+^= 	  | OU exclusivo de bit
 
 
 ### 2. Redirecionamento
@@ -87,50 +89,54 @@ Operador | Ação
 
 ### 3. Variáveis especiais
 
-Variável 	Parâmetros Posicionais
-$0 	Parâmetro número 0 (nome do comando ou função)
-$1 	Parâmetro número 1 (da linha de comando ou função)
-... 	Parâmetro número N ...
-$9 	Parâmetro número 9 (da linha de comando ou função)
-${10} 	Parâmetro número 10 (da linha de comando ou função)
-... 	Parâmetro número NN ...
-$# 	Número total de parâmetros da linha de comando ou função
-$* 	Todos os parâmetros, como uma string única
-$@ 	Todos os parâmetros, como várias strings protegidas
-Variável 	Miscelânia
-$$ 	Número PID do processo atual (do próprio script)
-$! 	Número PID do último job em segundo plano
-$_ 	Último argumento do último comando executado
-$? 	Código de retorno do último comando executado
+Variável | Parâmetros Posicionais
+-------- | -----------------------
+$0 	| Parâmetro número 0 (nome do comando ou função)
+$1 	| Parâmetro número 1 (da linha de comando ou função)
+... | Parâmetro número N ...
+$9 	| Parâmetro número 9 (da linha de comando ou função)
+${10} | Parâmetro número 10 (da linha de comando ou função)
+... | Parâmetro número NN ...
+$# 	| Número total de parâmetros da linha de comando ou função
+$* 	| Todos os parâmetros, como uma string única
+$@ 	| Todos os parâmetros, como várias strings protegidas
+
+Variável |	Miscelânia
+-------- | -----------
+$$ 	| Número PID do processo atual (do próprio script)
+$! 	| Número PID do último job em segundo plano
+$_ 	| Último argumento do último comando executado
+$? 	| Código de retorno do último comando executado
 
 ### 4. Expansão de variáveis
 
-Sintaxe 	Expansão Condicional
-${var:-texto} 	Se var não está definida, retorna 'texto'
-${var:=texto} 	Se var não está definida, defina-a com 'texto'
-${var:?texto} 	Se var não está definida, retorna o erro 'texto'
-${var:+texto} 	Se var está definida, retorna 'texto', senão retorna o vazio
-Sintaxe 	Expansão de Strings
-${var} 	É o mesmo que $var, porém não ambíguo
-${#var} 	Retorna o tamanho da string
-${!var} 	Executa o conteúdo de $var (igual 'eval \$$var')
-${!texto*} 	Retorna os nomes de variáveis começadas por 'texto'
-${var:N} 	Retorna o texto a partir da posição 'N'
-${var:N:tam} 	Retorna 'tam' caracteres a partir da posição 'N'
-${var#texto} 	Corta 'texto' do início da string
-${var##texto} 	Corta 'texto' do início da string (* guloso)
-${var%texto} 	Corta 'texto' do final da string
-${var%%texto} 	Corta 'texto' do final da string (* guloso)
-${var/texto/novo} 	Substitui 'texto' por 'novo', uma vez
-${var//texto/novo} 	Substitui 'texto' por 'novo', sempre
-${var/#texto/novo} 	Se a string começar com 'texto', substitui 'texto' por 'novo'
-${var/%texto/novo} 	Se a string terminar com 'texto', substitui 'texto' por 'novo'
-${var^} 	Converte para maiúscula o primeiro caractere
-${var^^} 	Converte para maiúscula todos os caracteres
-${var,} 	Converte para minúscula o primeiro caractere
-${var,,} 	Converte para minúscula todos os caracteres
-${var~} 	Inverte maiúscula/minúscula do primeiro caractere
-${var~~} 	Inverte maiúscula/minúscula de todos os caracteres
+Sintaxe | 	Expansão Condicional
+------- |   --------------------
+${var:-texto} 	| Se var não está definida, retorna 'texto'
+${var:=texto} 	| Se var não está definida, defina-a com 'texto'
+${var:?texto} 	| Se var não está definida, retorna o erro 'texto'
+${var:+texto} 	| Se var está definida, retorna 'texto', senão retorna o vazio
+Sintaxe |	Expansão de Strings
+${var} 	| É o mesmo que $var, porém não ambíguo
+${#var} |	Retorna o tamanho da string
+${!var} | Executa o conteúdo de $var (igual 'eval \$$var')
+${!texto*} | Retorna os nomes de variáveis começadas por 'texto'
+${var:N} |	Retorna o texto a partir da posição 'N'
+${var:N:tam} | Retorna 'tam' caracteres a partir da posição 'N'
+${var#texto} |	Corta 'texto' do início da string
+${var##texto} |	Corta 'texto' do início da string (* guloso)
+${var%texto} |	Corta 'texto' do final da string
+${var%%texto} |	Corta 'texto' do final da string (* guloso)
+${var/texto/novo} | Substitui 'texto' por 'novo', uma vez
+${var//texto/novo} | 	Substitui 'texto' por 'novo', sempre
+${var/#texto/novo} |	Se a string começar com 'texto', substitui 'texto' por 'novo'
+${var/%texto/novo} |	Se a string terminar com 'texto', substitui 'texto' por 'novo'
+${var^} | Converte para maiúscula o primeiro caractere
+${var^^} | Converte para maiúscula todos os caracteres
+${var,} | Converte para minúscula o primeiro caractere
+${var,,} | Converte para minúscula todos os caracteres
+${var~}  | Inverte maiúscula/minúscula do primeiro caractere
+${var~~}  | Inverte maiúscula/minúscula de todos os caracteres
 
 ### 5. Blocos e agrupamentos
 
