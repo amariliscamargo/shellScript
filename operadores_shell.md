@@ -613,30 +613,30 @@ Ctrl+Y 	Cola o trecho recortado
 
 ### 24. A caixa de ferramentas do shelleiro
 
-Comando 	Função 	Opções úteis
-cat 	Mostra arquivo 	-n, -s
-cut 	Extrai campo 	-d -f, -c
-date 	Mostra data 	-d, +'...'
-diff 	Compara arquivos 	-u, -Nr, -i, -w
-echo 	Mostra texto 	-e, -n
-find 	Encontra arquivos 	-name, -iname, -type f, -exec, -or
-fmt 	Formata parágrafo 	-w, -u
-grep 	Encontra texto 	-i, -v, -r, -qs, -n, -l, -w -x, -A -B -C
-head 	Mostra início 	-n, -c
-od 	Mostra caracteres 	-a, -c, -o, -x
-paste 	Paraleliza arquivos 	-d, -s
-printf 	Mostra texto 	nenhuma
-rev 	Inverte texto 	nenhuma
-sed 	Edita texto 	-n, -f, s/isso/aquilo/, p, d, q, N
-seq 	Conta números 	-s, -f
-sort 	Ordena texto 	-n, -f, -r, -k -t, -o
-tac 	Inverte arquivo 	nenhuma
-tail 	Mostra final 	-n, -c, -f
-tee 	Arquiva fluxo 	-a
-tr 	Transforma texto 	-d, -s, A-Z a-z
-uniq 	Remove duplicatas 	-i, -d, -u
-wc 	Conta letras 	-c, -w, -l, -L
-xargs 	Gerencia argumentos 	-n, -i
+Comando | Função | opções úteis
+cat |	Mostra arquivo 	|-n, -s
+cut | Extrai campo 	|-d -f, -c
+date |	Mostra data 	|  -d, +'...'
+diff 	| Compara arquivos 	|-u, -Nr, -i, -w
+echo |	Mostra texto 	|-e, -n
+find 	| Encontra arquivos 	|-name, -iname, -type f, -exec, -or
+fmt 	| Formata parágrafo 	|-w, -u
+grep 	| Encontra texto 	| -i, -v, -r, -qs, -n, -l, -w -x, -A -B -C
+head |	Mostra início 	| -n, -c
+od |	Mostra caracteres 	| -a, -c, -o, -x
+paste 	| Paraleliza arquivos | -d, -s
+printf |	Mostra texto 	| nenhuma
+rev 	| Inverte texto 	| nenhuma
+sed 	| Edita texto 	| -n, -f, s/isso/aquilo/, p, d, q, N
+seq 	| Conta números 	| -s, -f
+sort 	| Ordena texto 	| -n, -f, -r, -k -t, -o
+tac 	| Inverte arquivo 	| nenhuma
+tail |	Mostra final 	| -n, -c, -f
+tee 	| Arquiva fluxo 	| -a
+tr 	| Transforma texto 	| -d, -s, A-Z a-z
+uniq 	| Remove duplicatas 	| -i, -d, -u
+wc 	| Conta letras 	| -c, -w, -l, -L
+xargs 	| Gerencia argumentos 	| -n, -i
 
 
 [Fonte: Canivete Suíço do Shell (Bash)](https://aurelio.net/shell/canivete/)
